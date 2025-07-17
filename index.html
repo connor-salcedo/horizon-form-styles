@@ -350,7 +350,12 @@
                 question2: document.getElementById('question2').value,
                 question3: document.getElementById('question3').value,
                 question4: document.getElementById('question4').value,
-                submittedAt: new Date().toISOString()
+                submittedAt: new Date().toISOString(),
+                // Include the actual question texts that were loaded from the API
+                question1_text: document.getElementById('q1text').textContent,
+                question2_text: document.getElementById('q2text').textContent,
+                question3_text: document.getElementById('q3text').textContent,
+                question4_text: document.getElementById('q4text').textContent
             };
             
             try {
