@@ -349,13 +349,13 @@
                 question1: document.getElementById('question1').value,
                 question2: document.getElementById('question2').value,
                 question3: document.getElementById('question3').value,
-                question4: document.getElementById('question4').value,
+                // question4: document.getElementById('question4').value,
                 submittedAt: new Date().toISOString(),
                 // Include the actual question texts that were loaded from the API
                 question1_text: document.getElementById('q1text').textContent,
                 question2_text: document.getElementById('q2text').textContent,
                 question3_text: document.getElementById('q3text').textContent,
-                question4_text: document.getElementById('q4text').textContent
+                // question4_text: document.getElementById('q4text').textContent
             };
             
             try {
@@ -393,7 +393,7 @@
             if (questions.question1) document.getElementById('q1text').textContent = questions.question1;
             if (questions.question2) document.getElementById('q2text').textContent = questions.question2;
             if (questions.question3) document.getElementById('q3text').textContent = questions.question3;
-            if (questions.question4) document.getElementById('q4text').textContent = questions.question4;
+            // if (questions.question4) document.getElementById('q4text').textContent = questions.question4;
         }
 
         // Add smooth focus animations
